@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOLV</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,500,700,800&display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+        :root{
+            --open_sans: 'open sans', sans-serif;
+            --playfair: 'Playfair Display', serif;
+            --amarillo: '#fff';
+            --naranja: 'orangered';
+            --gris: '#535851';
+            --gris_osc: 'darkslategrey'
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 14px;
+        }
+        nav{
+            display: flex-start;
+            justify-content: space-between;
+            font-family: var(--open_sans);
+            padding: 1em 5em;
+            position: fixed;
+            
+        }
+        .menu{
+            display: flex;
+            flex-direction:row;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 1em;
+        }
+        .logo{
+            display: flex;
+            padding: 0em 44em;
+            position: fixed;
+            top: 2.5em;
+        }
+        .explora{
+            display: flex-end;
+            padding: 1em  89em;;
+            position: fixed;
+            top: 2em;
+            
+        }
+        .contenedor{
+            width: 100%;
+            display: grid;
+            grid-template: repeat(7, 1fr)/ repeat(4, 1fr);
+        }
+        .contenedor img{
+            width: 100%;
+        }
+        .img1{
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+        .img1 img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .texto1{
+            grid-column: span 2;
+            grid-row: span 3;
+            padding-left: 10em;
+            padding-right: 10em;
+            padding-top: 20em;
+            display: flex;
+            flex-direction: column;
+            font-family: var(--playfair);
+            text-align: center;
+        }
+        h1{
+            font-size: 2.5em;
+            padding-bottom: 1em;
+        }
+        .texto1 p{
+            font-family: var(--open_sans);
+        }
+        .texto1 a{
+            color: lightcoral;
+        }
+        .texto2{
+            grid-column: span 4;
+            grid-row: span 2;
+            padding-top: 15em;
+            padding-left: 15em;
+            padding-right: 15em;
+            display: flex;
+            flex-direction: column;
+            font-family: var(--playfair);
+            text-align: center;
+            background-color: lightcoral;
+         }
+        .texto2 a{
+            color: white;
+        }
+        h2{
+            font-size: 4em;
+        }
+        .texto2>p{
+            padding: 0.5em 1em 1em 1em;
+            font-size: 2em;
+        }
+        .texto2 p:last-child{
+            font-family: var(--open_sans);
+            font-size: 1em;
+        }
+        .texto2 a{
+            color: 'orangered';
+        }
+        .img2{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .img3{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img4{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img5{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img6{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .img7{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .contenedor_pie{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10em;
+        }
+        footer p{
+            color: white;
+        }
+        footer{
+            font-family: var(--open_sans);
+            line-height: 24px;
+            background-color: #535851;
+            padding: 10em 15em 5em 15em;
+        }
+        .contenedor_pie2 img{
+            width: 3.5em;
+            padding: 1em 36em;
+        }
+        .titulillo{
+            color: lightcoral;
+        }
+        .rrss{
+            margin-top: 3em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+        <div class="menu">
+            <a href="#">Products</a>
+            <a href="#">Stockists</a>
+            <a href="#">About us</a>
+        </div>
+        <div class="logo">   
+            <img src="img/logo.png">
+        </div> 
+        <div class="explora">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>    
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="img1">
+                <img src="img/3.jpeg">
+            </div>
+            <div class="texto1">
+                <h1>Lift the blind to let in the light. A moment of calm before the day begins.</h1>
+                <p>Featuring <a href="#">Cherry sofa</a> and <a href="#">Kile coffee table</a></p>
+            </div>
+            <div class="texto2">
+                <h2>Time for Living</h2>
+                <p>Take time for life’s little moments. Browsing the news as you eat breakfast. Setting the table for hungry guests. Sinking in to your favourite armchair. At Tolv, your daily rituals are at the heart of our design. We make furniture to give you your best day, every day.</p>
+                <p>Find out more <a href="#">About us</a></p>
+            </div>
+            <div class="img2">
+                <img src="img/6.jpeg">
+            </div>
+            <div class="img3">
+                <img src="img/7.jpeg">
+            </div>
+            <div class="img4">
+                <img src="img/8.jpeg">
+            </div>
+            <div class="img5">
+                <img src="img/9.jpeg">
+            </div>
+            <div class="img6">
+                <img src="img/10.jpeg">
+            </div>
+            <div class="img11">
+                <img src="img/11.jpeg">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor_pie">
+            <div>
+                <p class="titulillo">Products:</p>
+                <p>Lounge Chairs</p>
+                <p>Sofas</p>
+                <p>Daybeds</p>
+                <p>Poufs</p>
+                <p>Dining Chairs</p>
+                <p>Stools</p>
+                <p>Tables & Desks</p>
+                <p>Storage</p>
+            </div>
+            <div>
+                <p class="titulillo">Useful information:</p>
+                <p>Our stockists</p>
+                <p>Our designers</p>
+                <p>Product care</p>
+            </div>
+            <div>
+                <p class="titulillo">Company:</p>
+                <p>News</p>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div>
+                 <p class="titulillo">Connect with us:</p>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                 <div>
+                    <div class="rrss">
+                        <p class="titulillo">Access to:</p>
+                        <p>Client login</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_pie2">
+            <p>All rights reserved Tolv © 2020</p>
+            <img src="img/logo/monograma.png">
+        </div>
+    </footer>
+</body>
+</html>
